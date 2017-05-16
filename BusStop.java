@@ -26,9 +26,9 @@ public class BusStop {
       passengersInQueue[passengersInQueueCount] = person;
     }
 
-    public void movePassengerFromQueueToBus(passengers[]) {
+    public void movePassengerFromQueueToBus() {
       for (int i=0; i < passengersInQueue.length; i++) {
-        passengerGetsOnBus(passengersInQueue[i]);
+       bus.passengerGetsOnBus(passengersInQueue[i]);
         passengersInQueue[i] = null;
       }
     }

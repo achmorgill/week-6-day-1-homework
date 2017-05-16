@@ -25,8 +25,8 @@ public class BusTest{
 
   @Test
   public void passengerGetsOnBus() {
-    bus.passengerGetsOnBus(person);
-    assertEquals(1,bus.getNoOfPassengers());
+  busStop.movePassengerFromQueueToBus();
+    assertEquals(0,bus.getNoOfPassengers());
   }
 
   @Test
@@ -58,7 +58,7 @@ public class BusTest{
   }
   @Test
   public void movePassengerFromQueueToBus() {
-    busStop.movePassengerFromQueueToBus(bus.passengers);
+    busStop.movePassengerFromQueueToBus(person);
     assertEquals(0,busStop.getNoPassengersInQueue());
   }
 
